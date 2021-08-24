@@ -41,6 +41,5 @@ View [live](https://nickscreative.herokuapp.com//)
 2. Bootstrap
 3. Flask
 
-
 This project is under the  [MIT](LICENSE) licence
 
