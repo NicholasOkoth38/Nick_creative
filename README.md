@@ -26,7 +26,6 @@ You need the following to start working on this project: On your local systems;
     export SECRET_KEY='secret-key'
     python3.8 manage.py server
 
-
 # Running The Application
 In your terminal, run the following commands;
  
