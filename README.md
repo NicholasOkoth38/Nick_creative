@@ -4,7 +4,13 @@
 Nicholas Owino
 
 ## Description
+In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?
 
+Your task this week is to create an application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
+
+The pitches are organized by category. You can have different categories like pickup lines, interview pitch, product pitch, promotion pitch.(You don't have to use these categories, you can come up with your own creative categories) 
+
+The pitches should be arranged by category and the new posts should be displayed first
 
 ## Prerequisites
 You need:
@@ -13,7 +19,6 @@ You need:
 2. Flask
 3. Pip
 4. Virtual Environment(venv)
-
 
 ## Project SetUp
 1. Install python version 3.8
