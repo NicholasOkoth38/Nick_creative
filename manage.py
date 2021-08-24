@@ -14,6 +14,7 @@ manager.add_command('server', Server)
 migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)
 
+
 @manager.command
 def test():
     """
