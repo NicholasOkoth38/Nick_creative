@@ -24,3 +24,4 @@ class CommentModelTest(unittest.TestCase):
 
     def test_check_instance_variables(self):
         self.assertEquals(self.comment.opinion,'Everything will fall into place')
+        
