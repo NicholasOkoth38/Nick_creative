@@ -7,7 +7,7 @@ Nicholas Owino
 
 
 ## Prerequisites
-You need the following to start working on this project: On your local systems;
+You need:
 
 1. Python version 3.8
 2. Flask
