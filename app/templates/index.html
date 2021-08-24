@@ -1,0 +1,96 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+{% block content%}
+<style>
+  .panel-body {
+    height: 200px;
+  }
+
+  .card-title {
+    color: #03071e;
+    font-size: 2em;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+<div class="container-fluid text-center"
+  style="font-family: 'Verdana ', cursive; font-size:3em; background-image:
+  url('https://images.pexels.com/photos/7413998/pexels-photo-7413998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+background-repeat:no-repeat; background-position:center center; background-size:cover; color:rgb(10, 10, 10); height:50vh">
+
+
+  <h1>Welcome to <strong>Nick's Creative</strong></h1>
+  <p>Wehere you can organize your pitches?.</p>
+  <p>Here we go!!!.</p>
+
+  <a class="btn btn-primary btn-lg" href="{{url_for('main.new_pitch')}}" style="height:40px"> <span
+      class="glyphicon glyphicon-plus"></span>Create a Pitch</a>
+</div>
+
+<div class="container" style="height:50vh">
+
+  <h1 class="text-center" style="color: rgb(32, 218, 187);">Pitch Categories</h1>
+  <hr>
+  <div class="row form-group m-3">
+    <div class="col-md-3 ">
+      <div class="panel shadow p-3 mb-5 bg-body rounded text-center">
+        <div class="panel-body" style="background-color: #e5e5e5;">
+          <h5 class="card-title">Interview Pitches</h5>
+
+          <p class="card-text">Eye contact, be brave and take time to understand questions.</p>
+          <a href="{{url_for('main.displayInterviewCategory')}}" class="btn btn-primary">View Pitches</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 ">
+      <div class="panel shadow p-3 mb-5 bg-body rounded text-center">
+        <div class="panel-body" style="background-color: #e5e5e5;">
+          <h5 class="card-title">Promotion Pitches</h5>
+
+          <p class="card-text">Keep the good spirit and we will reward you</p>
+          <a href="{{url_for('main.displayPromotionCategory')}}" class="btn btn-primary">View Pitches</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel shadow p-3 mb-5 bg-body rounded text-center">
+        <div class="panel-body" style="background-color: #e5e5e5;">
+          <h5 class="card-title">Product Pitches</h5>
+
+          <p class="card-text"> Always stay ahead.</p>
+          <a href="{{url_for('main.displayProductCategory')}}" class="btn btn-primary">View Pitches</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel shadow p-3 mb-5 bg-body rounded text-center">
+        <div class="panel-body" style="background-color: #e5e5e5;">
+          <h5 class="card-title">Pickup Lines</h5>
+
+          <p class="card-text">There is always next time.</p>
+          <a href="{{url_for('main.displayPickupCategory')}}" class="btn btn-primary">View Pitches</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row form-group m-3">
+
+
+
+  </div>
+
+
+
+
+
+
+</div>
+{% endblock %}

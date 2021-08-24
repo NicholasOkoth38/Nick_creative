@@ -1,0 +1,34 @@
+{% macro displayPitches(pitches_list)%}
+{%for pitch in pitches_list%}
+<div class="row">
+
+    <div class="well well-lg p-3 col-md-3" style="text-align: center; width: 50%; margin-left: 300px ">
+        <h3>{{pitch.pitch_title}}</h3>
+        <hr>
+        <p>{{pitch.pitch_comment}}</p>
+        <p>Posted By : {{pitch.user.username}} </p>
+        <p>Posted on: {{pitch.posted}}</p>
+        <a href="/comment/{{pitch.id}}" class="btn btn-success btn-center -center">
+            Comment</a>
+
+        <a href="#" class="btn btn-info ">
+            <span class="glyphicon glyphicon-thumbs-up"></span> Upvote 0
+        </a>
+
+        <a href="#" class="btn btn-info ">
+            <span class="glyphicon glyphicon-thumbs-down"></span> Downvote 0
+        </a>
+
+    </div>
+</div>
+
+{%endfor%}
+{%endmacro%}
+{%macro displayComments(comments_list)%}
+{%for comment in comments_list%}
+<div class="col-md-12">
+    <p> {{comment.opinion}}</p>
+    <h5>By : {{comment.user.username}}</h5>
+</div>
+{%endfor%}
+{%endmacro%}
