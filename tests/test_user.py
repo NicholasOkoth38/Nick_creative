@@ -33,4 +33,5 @@ class UserModelTest(unittest.TestCase):
         user = User.query.filter_by(username="nicholas").first()
         if user:
             print("found")
+
             
